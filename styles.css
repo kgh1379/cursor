@@ -1,0 +1,81 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#chat-container {
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #e3f2fd;
+    margin-left: 20%;
+}
+
+.bot-message {
+    background-color: #f5f5f5;
+    margin-right: 20%;
+}
+
+.hidden {
+    display: none;
+}
+
+.reset-button {
+    background-color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.reset-button:hover {
+    background-color: #c82333;
+}
+
+#record-button {
+    background-color: #28a745;
+}
+
+#record-button.recording {
+    background-color: #dc3545;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

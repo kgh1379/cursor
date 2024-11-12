@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI 채팅</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="api-key-section">
+            <h2>OpenAI API 키를 입력하세요</h2>
+            <input type="password" id="api-key" placeholder="sk-...">
+            <button onclick="validateApiKey()">확인</button>
+        </div>
+
+        <div id="chat-section" class="hidden">
+            <button onclick="resetApiKey()" class="reset-button">API 키 초기화</button>
+            <div id="chat-container"></div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="메시지를 입력하세요...">
+                <button id="record-button" onclick="toggleRecording()">음성 입력</button>
+                <button onclick="sendMessage()">전송</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
